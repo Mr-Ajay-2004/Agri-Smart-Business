@@ -47,8 +47,8 @@ router.post("/create-checkout-session/:productId", authMiddleware, async (req, r
         quantity,
       }],
       mode: "payment",
-      success_url: "http://localhost:5173/paymentsuccess",
-      cancel_url: "http://localhost:5173/paymentfailed",
+      success_url: "https://smart-agribusiness.netlify.app/paymentsuccess",
+      cancel_url: "https://smart-agribusiness.netlify.app/paymentfailed",
       metadata: {
         userId: req.user.id,
         productId: product._id.toString(),
