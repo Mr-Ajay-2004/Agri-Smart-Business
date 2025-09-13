@@ -1,8 +1,9 @@
 {
   "type": "commonjs",
   "scripts": {
-    "start": "node Server.js"
-  },
+  "start": "node Server.js",
+  "dev": "nodemon Server.js"
+},
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
