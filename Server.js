@@ -12,14 +12,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
 // Middlewares
-
-
-app.use(
-  cors({
-    origin: ["http://localhost:5173", "https://smart-agribusiness.netlify.app"], 
-    credentials: true, 
-  })
-);
+app.use(cors({ origin: "https://smart-agribusiness.netlify.app/", credentials: true }));
 app.use(express.json());
 
 // Auth routes
