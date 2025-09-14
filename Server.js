@@ -32,7 +32,7 @@ app.use("/api/products",productRoutes);
 // Payment Routes
 
 const Payments=require('./Routes/Payment');
-app.use("/api/payment",Payments);
+app.use(Payments);
 
 // Admin Routes
 const Admin=require('./Admin')
